@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/img_Photo"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Photo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_judul">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex est, feugiat ut facilisis nec, iaculis ac ex. Vivamus lectus tellus, bibendum viverra nibh ac, lobortis viverra sem. Aenean interdum tempor elit, ac pretium tortor finibus a. Vivamus fermentum vel mi non semper. Nunc ac dui ut arcu tincidunt commodo ut at lorem. Integer lacinia, erat at sodales efficitur, nunc erat condimentum ligula, ac aliquet ipsum justo at mauris. Nulla id nisl massa. Nam vehicula urna at eleifend congue.\n\nDonec at commodo urna. Duis blandit mauris vitae imperdiet pulvinar. Nullam volutpat nec sem at vehicula. Quisque tincidunt vel ante sed vestibulum. Sed id eros dignissim lorem facilisis laoreet. Ut lacinia commodo placerat. Curabitur auctor euismod maximus. Suspendisse lacinia blandit mi, eu varius tellus dignissim id. Quisque pellentesque malesuada dapibus. Nulla lacinia vehicula orci cursus facilisis. Sed lacus ante, pellentesque quis augue id, venenatis ornare ante. Fusce ac nulla viverra, mollis massa vel, faucibus augue. Aenean dignissim lacus urna, vitae porttitor lectus viverra at. Sed ut nulla nec eros maximus interdum sit amet id sapien. Fusce ut faucibus ipsum. Curabitur a elementum tortor, cursus consectetur ante.\n\nDonec sagittis ullamcorper enim non venenatis. Phasellus laoreet viverra blandit. Aenean viverra scelerisque scelerisque. Donec tempor feugiat posuere. In at tellus accumsan, venenatis lorem quis, varius turpis. Proin blandit ac ante sit amet vestibulum. Quisque at tempus quam, sed facilisis neque. Praesent lacinia aliquam nulla, quis congue justo gravida sit amet. Cras varius urna et sollicitudin finibus. Pellentesque blandit pretium luctus. Aenean sit amet mi non enim semper gravida sit amet eget massa. Nulla ultrices at mi id vulputate. Duis ultricies ipsum vel odio hendrerit gravida. Donec tincidunt dignissim augue, eget tempor nulla vestibulum lobortis. Nam maximus, metus et elementum iaculis, odio nibh fermentum dolor, sed fermentum ex dolor id est.\n\nCurabitur sollicitudin purus eu elit venenatis maximus. Donec porta magna nec posuere molestie. Vestibulum auctor pulvinar quam id tempus. Aliquam iaculis ipsum sed eleifend viverra. Praesent maximus tellus id nibh ullamcorper, at vulputate augue porta. Nam ac semper nunc. Morbi interdum laoreet leo, vel tempor est venenatis et. Pellentesque vitae leo et magna consectetur porttitor id porttitor tellus. Vivamus eleifend aliquet dolor, at aliquam nisi. Donec suscipit lectus in nibh pellentesque, nec porta dolor dictum. In cursus consequat nisi, et dictum enim. Duis pretium dignissim arcu. Donec cursus pretium leo consectetur semper.\n\nMaecenas finibus scelerisque varius. Curabitur neque ex, feugiat vel est nec, scelerisque pharetra purus. Fusce ac ornare lectus. Fusce erat felis, condimentum vitae nisi ut, aliquam malesuada tortor. Etiam risus nulla, hendrerit ut felis vitae, efficitur bibendum libero. Praesent pulvinar est sit amet lorem rutrum maximus at ut nulla. Maecenas ultrices commodo ultrices. Etiam laoreet risus at porttitor consequat. Cras viverra leo libero, eu elementum quam convallis non. Fusce varius varius euismod. Nam mattis venenatis dapibus. Aliquam mauris mi, facilisis in leo eget, viverra iaculis nisl. Sed mollis ultrices nisl sit amet venenatis. Nunc molestie turpis quis risus lacinia, at volutpat quam dapibus. Aenean ipsum tortor, molestie id dui vel, pulvinar laoreet ante. Ut viverra sapien nec orci elementum suscipit."
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/baseline_share_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Photo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
